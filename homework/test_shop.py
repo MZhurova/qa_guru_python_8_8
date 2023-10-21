@@ -75,7 +75,7 @@ class TestCart:
 
     def test_buy(self, cart, product):
         cart.add_product(product, 77)
-        cart.buy() == 90
+        cart.buy()
 
         assert product not in cart.products
         assert product.quantity == 923
